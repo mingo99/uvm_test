@@ -1,0 +1,388 @@
+# //  Questa Sim-64
+# //  Version 2020.1 win64 Jan 28 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do run.do
+# F:/ProgramFiles/Questasim/uvm-1.1d/win64
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 18:53:25 on Aug 09,2021
+# vlog -reportprogress 300 ../rtl/dut.v ../rtl/dut_top.v 
+# -- Compiling module dut
+# -- Compiling module dut_top
+# 
+# Top level modules:
+# 	dut_top
+# End time: 18:53:25 on Aug 09,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 18:53:25 on Aug 09,2021
+# vlog -reportprogress 300 ../uvm/top_tb.sv 
+# ** Note: (vlog-2286) ../uvm/top_tb.sv(1): Using implicit +incdir+F:/ProgramFiles/Questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface my_if
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 18:53:26 on Aug 09,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -c -sv_lib F:/ProgramFiles/Questasim/uvm-1.1d/win64/uvm_dpi work.top_tb 
+# Start time: 18:53:26 on Aug 09,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_tb_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top_tb(fast)
+# Loading work.my_if(fast__2)
+# Loading work.dut(fast)
+# Loading work.my_if(fast)
+# Loading F:/ProgramFiles/Questasim/uvm-1.1d/win64/uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test my_case1...
+# UVM_INFO ..\uvm\my_driver.sv(10) @ 0: uvm_test_top.env.i_agt.drv [my_driver] new is called
+# UVM_INFO ..\uvm\my_driver.sv(15) @ 0: uvm_test_top.env.i_agt.drv [my_driver] build_phase is called
+# UVM_INFO ..\uvm\my_driver.sv(21) @ 0: uvm_test_top.env.i_agt.drv [my_driver] main_phase is called
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 110: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 210: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 230: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 1750: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 1750: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 1770: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 1770: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @908          
+#   dmac        integral        48    'he5a27c858386
+#   smac        integral        48    'h747c1378b746
+#   ether_type  integral        16    'hc3e4        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h21          
+#     [1]       integral        8     'hab          
+#     [2]       integral        8     'h95          
+#     [3]       integral        8     'h1b          
+#     [4]       integral        8     'h8b          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'h4e          
+#     [56]      integral        8     'h4b          
+#     [57]      integral        8     'hd9          
+#     [58]      integral        8     'hd9          
+#     [59]      integral        8     'h2a          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 1790: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 1790: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 1850: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 1870: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 3390: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 3390: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 3410: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 3410: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @924          
+#   dmac        integral        48    'hde46e641e50f
+#   smac        integral        48    'h63db8a25dc37
+#   ether_type  integral        16    'hb562        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h45          
+#     [1]       integral        8     'he3          
+#     [2]       integral        8     'hb           
+#     [3]       integral        8     'hce          
+#     [4]       integral        8     'hf9          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'h2a          
+#     [56]      integral        8     'h32          
+#     [57]      integral        8     'h80          
+#     [58]      integral        8     'h83          
+#     [59]      integral        8     'hf2          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 3430: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 3430: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 3490: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 3510: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 5030: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 5030: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 5050: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 5050: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @940          
+#   dmac        integral        48    'hbbd2e5f86471
+#   smac        integral        48    'h1f3996682159
+#   ether_type  integral        16    'h622e        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'ha9          
+#     [1]       integral        8     'hdc          
+#     [2]       integral        8     'h7d          
+#     [3]       integral        8     'h0           
+#     [4]       integral        8     'hfd          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'h10          
+#     [56]      integral        8     'h9b          
+#     [57]      integral        8     'hb1          
+#     [58]      integral        8     'hac          
+#     [59]      integral        8     'hed          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 5070: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 5070: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 5130: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 5150: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 6670: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 6670: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 6690: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 6690: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @956          
+#   dmac        integral        48    'hd4396b3965e6
+#   smac        integral        48    'h4a370ba223bb
+#   ether_type  integral        16    'h3167        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'hb           
+#     [1]       integral        8     'h7f          
+#     [2]       integral        8     'ha8          
+#     [3]       integral        8     'ha1          
+#     [4]       integral        8     'h9b          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'h36          
+#     [56]      integral        8     'h6a          
+#     [57]      integral        8     'hee          
+#     [58]      integral        8     'hbf          
+#     [59]      integral        8     'h34          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 6710: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 6710: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 6770: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 6790: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 8310: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 8310: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 8330: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 8330: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @972          
+#   dmac        integral        48    'h517059aa9586
+#   smac        integral        48    'ha0606f916eab
+#   ether_type  integral        16    'h8300        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h44          
+#     [1]       integral        8     'h27          
+#     [2]       integral        8     'h18          
+#     [3]       integral        8     'hec          
+#     [4]       integral        8     'h56          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'hb7          
+#     [56]      integral        8     'hc6          
+#     [57]      integral        8     'h69          
+#     [58]      integral        8     'hf4          
+#     [59]      integral        8     'h65          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 8350: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 8350: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 8410: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 8430: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 9950: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 9950: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 9970: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 9970: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @988          
+#   dmac        integral        48    'h956c7f70da92
+#   smac        integral        48    'h3561c8bddff9
+#   ether_type  integral        16    'hbcfb        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h29          
+#     [1]       integral        8     'hbc          
+#     [2]       integral        8     'h5d          
+#     [3]       integral        8     'hc4          
+#     [4]       integral        8     'h3d          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'h58          
+#     [56]      integral        8     'hf6          
+#     [57]      integral        8     'hde          
+#     [58]      integral        8     'hb2          
+#     [59]      integral        8     'h1f          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 9990: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 9990: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 10050: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 10070: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 11590: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 11590: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 11610: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 11610: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @1004         
+#   dmac        integral        48    'h10a44bcd966b
+#   smac        integral        48    'h6ec46b964967
+#   ether_type  integral        16    'h8061        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h8b          
+#     [1]       integral        8     'h4a          
+#     [2]       integral        8     'hf9          
+#     [3]       integral        8     'he0          
+#     [4]       integral        8     'he0          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'hd9          
+#     [56]      integral        8     'hbe          
+#     [57]      integral        8     'hb5          
+#     [58]      integral        8     'hc1          
+#     [59]      integral        8     'h4f          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 11630: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 11630: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 11690: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 11710: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 13230: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 13230: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 13250: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 13250: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @1020         
+#   dmac        integral        48    'h2d429d7195d6
+#   smac        integral        48    'h52e1fa8bafd7
+#   ether_type  integral        16    'h97b9        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h8a          
+#     [1]       integral        8     'h7b          
+#     [2]       integral        8     'h40          
+#     [3]       integral        8     'hcb          
+#     [4]       integral        8     'h9a          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'h95          
+#     [56]      integral        8     'h4f          
+#     [57]      integral        8     'h4c          
+#     [58]      integral        8     'h55          
+#     [59]      integral        8     'h2a          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 13270: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 13270: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 13330: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 13350: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 14870: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_driver.sv(47) @ 14870: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 14890: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 14890: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @1036         
+#   dmac        integral        48    'h5568bd7ad68f
+#   smac        integral        48    'hfb7b41c9fba 
+#   ether_type  integral        16    'h3751        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h73          
+#     [1]       integral        8     'h10          
+#     [2]       integral        8     'h53          
+#     [3]       integral        8     'hb2          
+#     [4]       integral        8     'h12          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'hf2          
+#     [56]      integral        8     'h6d          
+#     [57]      integral        8     'h7e          
+#     [58]      integral        8     'hf9          
+#     [59]      integral        8     'hc3          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 14910: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 14910: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 14970: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(42) @ 14990: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+# UVM_INFO ..\uvm\my_driver.sv(58) @ 16510: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 16530: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_model.sv(27) @ 16530: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+# --------------------------------------------------
+# Name          Type            Size  Value         
+# --------------------------------------------------
+# new_tr        my_transaction  -     @1048         
+#   dmac        integral        48    'hba9209299a53
+#   smac        integral        48    'h276f3f3b21e1
+#   ether_type  integral        16    'h9709        
+#   pload       da(integral)    60    -             
+#     [0]       integral        8     'h60          
+#     [1]       integral        8     'ha4          
+#     [2]       integral        8     'he8          
+#     [3]       integral        8     'h75          
+#     [4]       integral        8     'h9d          
+#     ...       ...             ...   ...           
+#     [55]      integral        8     'h3f          
+#     [56]      integral        8     'hcb          
+#     [57]      integral        8     'h95          
+#     [58]      integral        8     'h67          
+#     [59]      integral        8     'h26          
+#   crc         integral        32    'h0           
+# --------------------------------------------------
+# UVM_INFO ..\uvm\my_monitor.sv(57) @ 16550: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+# UVM_INFO ..\uvm\my_scoreboard.sv(36) @ 16550: uvm_test_top.env.scb [my_scoreboard] The actual pkt is same as expect pkt.
+# TEST CASE PASSED
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   86
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [my_driver]    23
+# [my_model]    10
+# [my_monitor]    40
+# [my_scoreboard]    10
+# ** Note: $finish    : F:/ProgramFiles/Questasim/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 17510 ns  Iteration: 105  Instance: /top_tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at F:/ProgramFiles/Questasim/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
